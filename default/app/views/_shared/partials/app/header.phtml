@@ -1,0 +1,19 @@
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title><?php print $siteTitle ?></title>
+	<?php print Tag::js("vendor/modernizr"); ?>
+	<?php Tag::css("print", "print") ?>
+	<?php Tag::css("screen") ?>
+	<?php Tag::css("sass.normalize") ?>
+	<?php Tag::css("styles") ?>
+  	<!--[if IE]>
+  		<?php Tag::css("ie") ?>
+  		 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  	<![endif]-->
+	<?php Print Html::includeCss() ?>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+	<?php print Tag::js("angular-route.min"); ?>	
+	<?php print Tag::js("angular-animate.min"); ?>
+	<?php print Tag::js("app"); ?>
+</head>

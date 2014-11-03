@@ -1,0 +1,9 @@
+servicios-especializados.sublime-project
+servicios-especializados.sublime-workspace
+core
+core/*
+default/app/config
+default/app/config/*
+default/app/temp/*
+default/public/.sass-cache/*
+default/public/temp/*

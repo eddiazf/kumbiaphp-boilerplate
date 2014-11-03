@@ -1,0 +1,74 @@
+/*
+Error: An @import loop has been found: /home/ajax/www/servicios/default/public/sass/normalize.scss imports itself
+        on line 5 of /home/ajax/www/servicios/default/public/sass/normalize.scss
+        from line 5 of /home/ajax/www/servicios/default/public/sass/normalize.scss
+
+1: // Import the legacy variables (relevant for controlling compass-normalize).
+2: @import "variables/**\/*";
+3: 
+4: // Generate normalize.css.
+5: @import "normalize";
+6: 
+7: // Use 'border-box' for the box model.
+8: @import "toolkit/kickstart";
+
+Backtrace:
+/home/ajax/www/servicios/default/public/sass/normalize.scss:5
+/home/ajax/www/servicios/default/public/sass/normalize.scss:5
+/home/ajax/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:538:in `handle_import_loop!'
+/home/ajax/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:308:in `visit_import'
+/home/ajax/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.7/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/ajax/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/home/ajax/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.7/lib/sass/stack.rb:79:in `block in with_base'
+/home/ajax/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.7/lib/sass/stack.rb:115:in `with_frame'
+/home/ajax/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.7/lib/sass/stack.rb:79:in `with_base'
+/home/ajax/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/home/ajax/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:315:in `block (2 levels) in visit_import'
+/home/ajax/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:315:in `map'
+/home/ajax/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:315:in `block in visit_import'
+/home/ajax/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.7/lib/sass/stack.rb:88:in `block in with_import'
+/home/ajax/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.7/lib/sass/stack.rb:115:in `with_frame'
+/home/ajax/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.7/lib/sass/stack.rb:88:in `with_import'
+/home/ajax/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:312:in `visit_import'
+/home/ajax/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.7/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/ajax/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/home/ajax/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.7/lib/sass/stack.rb:79:in `block in with_base'
+/home/ajax/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.7/lib/sass/stack.rb:115:in `with_frame'
+/home/ajax/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.7/lib/sass/stack.rb:79:in `with_base'
+/home/ajax/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/home/ajax/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.7/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/home/ajax/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.7/lib/sass/tree/visitors/base.rb:52:in `map'
+/home/ajax/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.7/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/home/ajax/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/home/ajax/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/home/ajax/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/home/ajax/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.7/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/home/ajax/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/home/ajax/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.7/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/ajax/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/home/ajax/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/home/ajax/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.7/lib/sass/tree/root_node.rb:36:in `css_tree'
+/home/ajax/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.7/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/home/ajax/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.7/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+/home/ajax/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.7/lib/sass/engine.rb:285:in `render_with_sourcemap'
+/home/ajax/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.7/lib/sass/plugin/compiler.rb:489:in `update_stylesheet'
+/home/ajax/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.7/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/home/ajax/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.7/lib/sass/plugin/compiler.rb:209:in `each'
+/home/ajax/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.7/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/home/ajax/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.7/lib/sass/plugin/compiler.rb:293:in `watch'
+/home/ajax/.rvm/gems/ruby-1.9.3-p547/gems/compass-1.0.1/lib/compass/sass_compiler.rb:46:in `watch!'
+/home/ajax/.rvm/gems/ruby-1.9.3-p547/gems/compass-1.0.1/lib/compass/commands/watch_project.rb:41:in `perform'
+/home/ajax/.rvm/gems/ruby-1.9.3-p547/gems/compass-1.0.1/lib/compass/commands/base.rb:18:in `execute'
+/home/ajax/.rvm/gems/ruby-1.9.3-p547/gems/compass-1.0.1/lib/compass/commands/project_base.rb:19:in `execute'
+/home/ajax/.rvm/gems/ruby-1.9.3-p547/gems/compass-1.0.1/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+/home/ajax/.rvm/gems/ruby-1.9.3-p547/gems/compass-1.0.1/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+/home/ajax/.rvm/gems/ruby-1.9.3-p547/gems/compass-1.0.1/bin/compass:30:in `block in <top (required)>'
+/home/ajax/.rvm/gems/ruby-1.9.3-p547/gems/compass-1.0.1/bin/compass:44:in `call'
+/home/ajax/.rvm/gems/ruby-1.9.3-p547/gems/compass-1.0.1/bin/compass:44:in `<top (required)>'
+/home/ajax/.rvm/gems/ruby-1.9.3-p547/bin/compass:23:in `load'
+/home/ajax/.rvm/gems/ruby-1.9.3-p547/bin/compass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: An @import loop has been found: /home/ajax/www/servicios/default/public/sass/normalize.scss imports itself\A         on line 5 of /home/ajax/www/servicios/default/public/sass/normalize.scss\A         from line 5 of /home/ajax/www/servicios/default/public/sass/normalize.scss\A \A 1: // Import the legacy variables (relevant for controlling compass-normalize).\A 2: @import \"variables/**/*\";\A 3: \A 4: // Generate normalize.css.\A 5: @import \"normalize\";\A 6: \A 7: // Use 'border-box' for the box model.\A 8: @import \"toolkit/kickstart\";"; }
