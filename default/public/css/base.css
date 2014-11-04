@@ -12235,6 +12235,89 @@ img, media {
   -moz-animation: scaleUp 0.5s both ease-in;
   animation: scaleUp 0.5s both ease-in; }
 
+/* line 23, ../sass/base/_page-animations.scss */
+.page-portafolios.ng-leave {
+  -webkit-transform-origin: 0% 0%;
+  -webkit-animation: rotateFall 1s both ease-in;
+  -moz-transform-origin: 0% 0%;
+  -moz-animation: rotateFall 1s both ease-in;
+  transform-origin: 0% 0%;
+  animation: rotateFall 1s both ease-in; }
+
+/* line 32, ../sass/base/_page-animations.scss */
+.page-portafolios.ng-enter {
+  -webkit-animation: scaleUp 0.5s both ease-in;
+  -moz-animation: scaleUp 0.5s both ease-in;
+  animation: scaleUp 0.5s both ease-in; }
+
+/* line 5, ../sass/components/_page.scss */
+.page {
+  bottom: 0;
+  padding-top: 200px;
+  position: absolute;
+  text-align: center;
+  top: 2.8rem;
+  width: 100%; }
+
+/* line 14, ../sass/components/_page.scss */
+.page h1 {
+  font-size: 60px; }
+
+/* line 18, ../sass/components/_page.scss */
+.page .bgimage {
+  margin: 0 auto;
+  width: 476px;
+  height: 0px;
+  overflow: hidden;
+  padding-top: 179px;
+  background: url("../img/glowlogo.png") no-repeat; }
+
+/* line 27, ../sass/components/_page.scss */
+.page a {
+  margin-top: 50px; }
+
+/* line 31, ../sass/components/_page.scss */
+#about {
+  color: #333;
+  position: absolute;
+  text-align: center;
+  top: 50px;
+  width: 100%; }
+
+/* line 41, ../sass/components/_page.scss */
+.page-home {
+  background: url("../img/space3.jpg");
+  color: #00907;
+  padding-top: 120px; }
+
+/* line 47, ../sass/components/_page.scss */
+.page-portafolios {
+  background: #E59400;
+  color: #a55400; }
+
+/* line 52, ../sass/components/_page.scss */
+.page-blog {
+  background: #ffa6bb;
+  color: #9e0000; }
+
+/* line 57, ../sass/components/_page.scss */
+.page-contact {
+  background: #ffa6bb;
+  color: #9e0000; }
+
+/* line 65, ../sass/components/_page.scss */
+.page-home .panel {
+  border-right: none;
+  border-left: none; }
+/* line 69, ../sass/components/_page.scss */
+.page-home .front {
+  margin-top: 3rem;
+  background: url("../img/bodybg.jpg"); }
+  /* line 72, ../sass/components/_page.scss */
+  .page-home .front h3 {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    color: white; }
+
 /********************SMALL-TABLET*******************************/
 /********************TABLET*******************************/
 /********************DESKTOP*******************************/

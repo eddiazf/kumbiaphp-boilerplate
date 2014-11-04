@@ -1,0 +1,77 @@
+html{ 
+  //overflow-y:hidden;
+}
+
+.page { 
+  bottom:0; 
+  padding-top:200px;
+  position:absolute; 
+  text-align:center;
+  top:2.8rem;  
+  width:100%; 
+}
+
+.page h1 {
+  font-size:60px; 
+}
+
+.page .bgimage {
+  margin: 0 auto;
+  width: 476px;
+  height: 0px;
+  overflow: hidden;
+  padding-top: 179px;
+  background: url("../img/glowlogo.png") no-repeat;
+}
+
+.page a { 
+  margin-top:50px; 
+}
+
+#about{ 
+  color:#333; 
+  position:absolute; 
+  text-align:center; 
+  top:50px; 
+  width:100%; 
+}
+
+// PAGES
+//============================================================================= */
+.page-home { 
+  background:url("../img/space3.jpg"); 
+  color:#00907; 
+  padding-top:120px;
+}
+
+.page-portafolios { 
+  background:#E59400; 
+  color:#a55400; 
+}
+
+.page-blog { 
+  background:#ffa6bb; 
+  color:#9e0000; 
+}
+
+.page-contact { 
+  background:#ffa6bb; 
+  color:#9e0000; 
+}
+
+// PAGES IN DEEP 
+//=========================================================================*/
+.page-home {
+  .panel{
+    border-right: none;
+    border-left: none;
+  }
+  .front{
+    margin-top: 3rem;
+    background: url("../img/bodybg.jpg");
+    h3{
+      @include text-shadow();
+      color: white;
+    }
+  }
+}
