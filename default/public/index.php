@@ -12,7 +12,7 @@
  * obtain it through the world-wide-web, please send an email
  * to license@kumbiaphp.com so we can send you a copy immediately.
  *
- * @copyright  Copyright (c) 2005-2012 Kumbia Team (http://www.kumbiaphp.com)
+ * @copyright  Copyright (c) 2005-2014 Kumbia Team (http://www.kumbiaphp.com)
  * @license    http://wiki.kumbiaphp.com/Licencia     New BSD License
  */
 
@@ -33,7 +33,7 @@ ini_set('display_errors', 'On');
 /**
  * Define marca de tiempo en que inicio el Request
  */
-define('START_TIME', microtime(1));
+define('START_TIME', microtime(TRUE));
 
 /**
  * Define el APP_PATH
@@ -59,17 +59,17 @@ define('CORE_PATH', dirname(dirname(APP_PATH)) . '/core/');
  * - Path para genera la Url en los links a acciones y controladores
  * - Esta ruta la utiliza Kumbia como base para generar las Urls para acceder de lado de
  *   cliente (con el navegador web) y es relativa al DOCUMENT_ROOT del servidor web
+ * 
+ *  EN PRODUCCION ESTA CONSTANTE DEBERÍA SER ESTABLECIDA MANUALMENTE
  */
-if ($_SERVER['QUERY_STRING']) {
-    define('PUBLIC_PATH', substr(urldecode($_SERVER['REQUEST_URI']), 0, - strlen(urldecode($_SERVER['QUERY_STRING'])) + 6));
-} else {
-    define('PUBLIC_PATH', $_SERVER['REQUEST_URI']);
-}
+$number  =  isset($_SERVER['PATH_INFO'])  ?  strlen(urldecode($_SERVER['PATH_INFO'])) - 1: 0;
+$number += empty($_SERVER['QUERY_STRING'])? 0:strlen(urldecode($_SERVER['QUERY_STRING']))+1;
+define('PUBLIC_PATH', substr(urldecode($_SERVER['REQUEST_URI']), 0, -$number));
 
 /**
  * Obtiene la url
  */
-$url = isset($_GET['_url']) ? $_GET['_url'] : '/';
+$url = empty($_SERVER['PATH_INFO']) ? '/' : $_SERVER['PATH_INFO'];
 
 /**
  * Carga el gestor de arranque

@@ -19,8 +19,10 @@ class AppController extends Controller
 
     final protected function initialize()
     {
-    	View::template("app/appController");
-    	$this->siteTitle = "Servicios Especializados | Webmaster";
+		// Si es AJAX enviar solo el view
+		if (Input::isAjax()) {
+		  View::template(NULL);
+		}
     }
 
     final protected function finalize()

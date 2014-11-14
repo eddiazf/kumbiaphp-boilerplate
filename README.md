@@ -1,11 +1,3 @@
-Mi KumbiaPHP Boilerplate
-Integración de angularjs a la mescla de este precioso framework, ademas
-de nuevos helpers como captcha, mailer, tables etc.
-
-Front-end con zurb-foundation
-Back-end con Bootstrap 3x
-
-
 ![KumbiaPHP](http://proto.kumbiaphp.com/img/kumbiaphp.png)
 Fácil, rápido y en español
 ---

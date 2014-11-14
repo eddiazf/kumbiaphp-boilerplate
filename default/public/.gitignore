@@ -1,0 +1,11 @@
+files
+files/*
+img
+img/*
+temp
+temp/*
+bower_componets
+bower_componets/*
+.sass-cache
+.sass-cache/*
+
