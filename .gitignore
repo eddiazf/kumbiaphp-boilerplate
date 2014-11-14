@@ -1,0 +1,13 @@
+servicios-especializados.sublime-project
+servicios-especializados.sublime-workspace
+core
+core/*
+default/app/config/config.ini
+default/app/config/database.ini
+default/app/temp/*
+default/app/extensions/helpers/mail.php
+default/public/.sass-cache/*
+default/public/bower_componets
+default/public/bower_componets/*
+default/public/temp/*
+
