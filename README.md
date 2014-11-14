@@ -1,4 +1,9 @@
+**Versión Personal con inclusión de Angularjs, SASS y Grunt
+
+Utilizando Agunlar-Foundations para desarrollo de plantillas 
+
 ![KumbiaPHP](http://proto.kumbiaphp.com/img/kumbiaphp.png)
+
 Fácil, rápido y en español
 ---
 Bienvenidos a KumbiaPHP Framework 
