@@ -6,14 +6,14 @@ module.exports = function (grunt) {
     pkg: grunt.file.readJSON('package.json'),
     watch: {
       scripts: {
-        files: ['./js/**/*.js', '!./js/angularcontent.gen.js'],
+        files: ['./app/content/**/*.js', '!./app/aplication.gen.js'],
         tasks: ['jshint', 'concat:content']
       }
     },
     concat: {
       content: {
-        src: ['./js/content/**/*.js', '!./js/content/angularcontent.gen.js'],
-        dest: './js/content.gen.js'
+        src: ['./app/content/**/*.js', '!./app/aplication.gen.js'],
+        dest: './js/kumbiaApp.gen.js'
       }
     },
     jshint: {
@@ -21,9 +21,9 @@ module.exports = function (grunt) {
         jshintrc: '.jshintrc'
       },
       all: [
-        'js/**/*.js',
-        '!js/**/*.gen.js',
-        '!js/**/vendor/*.js'
+        'app/**/*.js',
+        '!app/**/*.gen.js',
+        '!app/**/vendor/*.js'
       ]
     },
   });

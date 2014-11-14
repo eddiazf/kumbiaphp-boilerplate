@@ -7,7 +7,7 @@ default/app/config/database.ini
 default/app/temp/*
 default/app/extensions/helpers/mail.php
 default/public/.sass-cache/*
-default/public/bower_componets
-default/public/bower_componets/*
+default/public/bower_components
+default/public/bower_components/*
 default/public/temp/*
 
